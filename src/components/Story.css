@@ -1,0 +1,12 @@
+.story {
+  display: flex;
+  line-height: 24px;
+  margin: 10px 0;
+  padding: 10px;
+  background: #fff;
+}
+
+.story>span {
+  text-overflow: ellipsis;
+  padding: 0 5px;
+}
