@@ -16,11 +16,17 @@
 .story>span {
   overflow: hidden;
   text-overflow: ellipsis;
-  padding: 0 5px;
 }
 
 .story-title {
-  width: 40%;
+  width: 100%;
+  font-size: 14px;
+  margin: 4% 0 0;
+}
+
+.story-title a {
+  color: #000;
+  text-decoration: none;
 }
 
 .story-author {
@@ -30,6 +36,15 @@
   margin: 4% 0;
   text-overflow: ellipsis;
   overflow: hidden;
+  font-size: 12px;
+  color: #666;
+}
+
+.story-created-at {
+  display: flex;
+  font-size: 11px;
+  color: #ccc;
+  margin: 2% 0;
 }
 
 .story-comment {
