@@ -1,12 +1,74 @@
 .story {
-  display: flex;
-  line-height: 24px;
-  margin: 10px 0;
-  padding: 10px;
-  background: #fff;
+  box-shadow: 0 4.045px 6.472px -2.427px rgba(10, 27, 37, 0.4);
+  border-radius: 8px;
+  background-clip: padding-box;
+  padding: 2%;
+  margin: 2%;
+  background-color: #fff;
+  transition: 0.2s ease-in-out;
+  width: 200px;
+}
+
+.story:hover {
+  box-shadow: 0 10.59px 16.944px -6.354px rgba(10, 27, 37, 0.4);
 }
 
 .story>span {
+  overflow: hidden;
   text-overflow: ellipsis;
   padding: 0 5px;
+}
+
+.story-title {
+  width: 40%;
+  display: flex;
+}
+
+.story-author {
+  width: 90%;
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 4% 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.story-comment {
+  width: 10%;
+}
+
+.story-point {
+  width: 10%;
+}
+
+.primary-button {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  background-color: #00B0EE;
+  border: none;
+  height: 40px;
+  border-radius: 8px;
+  background-clip: padding-box;
+  box-shadow: 0 4.045px 6.472px -2.427px rgba(10, 27, 37, 0.4);
+  padding: 2%;
+  transition: all 0.1s linear;
+  position: relative;
+  margin: 2%;
+  cursor: pointer;
+  outline: none;
+  min-height: 40px;
+  min-width: 100px;
+}
+
+.primary-button:hover {
+  box-shadow: 0 10.59px 16.944px -6.354px rgba(10, 27, 37, 0.4);
+}
+
+.primary-button:focus {
+  outline: none;
+}
+
+.primary-button:active {
+  box-shadow: 0 4.045px 6.472px -2.427px rgba(10, 27, 37, 0.4);
 }
