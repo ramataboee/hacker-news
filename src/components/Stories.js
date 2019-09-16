@@ -6,7 +6,7 @@ const Stories = ({stories, onArchive}) =>
   <div className='stories'>
     {(stories || []).map(story =>
       <Story
-        key={story.onjectID}
+        key={story.objectID}
         story={story}
         onArchive={onArchive}
       />
