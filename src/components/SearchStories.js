@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {doFetchStories} from '../actions/story';
 import Button from './Button';
+import './SearchStories.css';
 
 class SearchStories extends Component{
   constructor(props){
@@ -39,7 +40,7 @@ class SearchStories extends Component{
           value={this.state.query}
           onChange={this.onChange}
         />
-        <Button type='submit'>Search</Button>
+        <Button type='submit' className='primary-button'>Search</Button>
       </form>
     );
   }

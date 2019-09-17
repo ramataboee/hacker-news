@@ -55,8 +55,11 @@
   width: 10%;
 }
 
-.primary-button {
+.story .primary-button {
   display: flex;
+}
+
+.primary-button {
   justify-content: center;
   color: #ffffff;
   background-color: #00B0EE;

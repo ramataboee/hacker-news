@@ -4,10 +4,15 @@ import Story from './Story';
 
 import {connect} from 'react-redux';
 
-import {getReadableStories} from '../selectors/story';
+import {
+  getReadableStories,
+  getFetchError,
+} from '../selectors/story';
 
-const Stories = ({stories}) =>
+const Stories = ({stories, error}) =>
   <div className='stories'>
+    {error && <p className='error'>Could not retrieve stories...</p>}
+
     {(stories || []).map(story =>
       <Story
         key={story.objectID}
@@ -19,6 +24,7 @@ const Stories = ({stories}) =>
 //subscribes to updates from redux store. on each store subscription update this will run
 const mapStateToProps = state => ({
   stories: getReadableStories(state),
+  error: getFetchError(state),
 });
 
 
